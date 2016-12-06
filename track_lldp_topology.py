@@ -4,10 +4,9 @@
 This includes the following steps:
 1) Gather current LLDP neighbor information.
 2) Gather previous LLDP information from apply-macro configurations.
-3) Parse LLDP neighbor information previously stored in the apply-macro.
-4) Compare LLDP neighbor info to previous LLDP info from the apply-macro.
-5) Print LLDP Up / Change / Down events.
-6) Store the updated LLDP neighbor info in the apply-macro configurations.
+3) Compare current LLDP neighbor info to previous LLDP info from the
+   apply-macro and print LLDP Up / Change / Down messages.
+4) Store the current LLDP neighbor info in the apply-macro configurations.
 
 The apply-macro configurations are in the format:
 apply-macro LLDP {
